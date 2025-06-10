@@ -20,16 +20,16 @@ def main():
     
 
     tmr = 0
-    a=0
-    b=0
+    
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         
-        kk_rct.move_ip(-1,0)#1.①
+        
 
         key_lst=pg.key.get_pressed()#押されたキー取得
-
+        a=-1
+        b=0
 
         if key_lst[pg.K_UP]:
             a=0
